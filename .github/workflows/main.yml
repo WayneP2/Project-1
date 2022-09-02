@@ -1,0 +1,28 @@
+name: Deploy HTML Files to AppService - CMST385
+on:
+
+  push:
+
+    branches:
+
+      - main
+
+jobs:
+
+  build-and-deploy:
+
+    runs-on: windows-latest
+
+     steps:
+
+    - uses: actions/checkout@main
+
+    - name: CMST385-wperryii - Web Deploy
+
+      uses: azure/webapps-deploy@v1
+
+      with:
+
+        slot-name: 'production'
+
+        publish-profile: "$CMST385-wperryii"
