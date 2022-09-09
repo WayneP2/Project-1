@@ -25,4 +25,4 @@ jobs:
 
         slot-name: 'production'
 
-        publish-profile: "$CMST385-wperryii"
+        publish-profile: "CMST385-wperryii"
